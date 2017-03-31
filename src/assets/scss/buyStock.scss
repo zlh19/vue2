@@ -1,0 +1,591 @@
+$size:40;
+
+
+/*主要内容*/
+.buy-stock-date{
+	height:(610rem-126rem)/$size;
+	background:#222431;
+	padding:0 43rem/$size;
+	position:relative; 
+}
+
+/*左右切换*/
+.icon-page{
+	position:absolute;
+	top:50%;
+	width:0;
+	height:0;
+	border-top:35rem/2/$size solid transparent;
+	border-bottom:35rem/2/$size solid transparent;
+	margin-top:-22rem/$size;
+}
+
+.icon-page.icon-prev{
+	border-right:22rem/$size solid #3c3f4c;
+	left:20rem/$size;
+}
+
+.icon-page.icon-next{
+	border-left:22rem/$size solid #3c3f4c;
+	right:20rem/$size
+}
+
+/*日期*/
+.date-box{
+	padding:0 0 0 1.609%;
+}
+
+.date-box li{
+	float:left;
+	padding:0 3.068%;
+	text-align:center;
+	position:relative;
+}
+
+.date-box li:after,.date-box li:before{
+	content:'';
+	position:absolute;
+	left:50%;
+	width:0;
+	height:0;
+	border-left:26rem/$size solid transparent;
+	border-right:26rem/$size solid transparent;
+	margin-left:-26rem/$size;
+	display:none;
+}
+
+.date-box li:before{
+	border-bottom:26rem/$size solid #333649;
+	bottom:0;
+	z-index:520;
+}
+
+.date-box li:after{
+	border-bottom:26rem/$size solid #1a1c26;
+	bottom:-1px;
+	z-index:521;
+}
+
+
+.buy-stock-date .date-week{
+	font-size:46.44rem/$size;
+	color:#767879;
+	line-height:166rem/$size;
+}
+
+.buy-stock-date .date-number{
+	width:132rem/$size;
+	height:132rem/$size;
+	line-height:132rem/$size;
+	box-sizing:border-box;
+	border:2px solid #373945;
+	border-radius:50%;
+	overflow:hidden;
+	margin:0 auto;
+	font-size:73.75rem/$size;
+	color:#767879;
+}
+
+.buy-stock-date .date-number em{
+	line-height:0;
+	margin:0;
+	padding:0;
+	margin-left:-7rem/$size;
+}
+
+.date-icon{
+	height:187rem/$size;
+	line-height:187rem/$size;
+	position:relative;
+}
+
+.date-icon i{
+	position:absolute;
+	left:50%;
+	top:50%;
+}
+.date-icon .icon-ok{
+	width:49rem/$size;
+	height:36rem/$size;
+	margin:-36rem/2/$size 0 0 -49rem/2/$size;
+	background:url(/src/assets/imgs/buyStock/icon-ok.png) no-repeat;
+	background-size:contain;
+}
+
+.date-icon .icon-warn{
+	width:6rem/$size;
+	height:49rem/$size;
+	margin:-49rem/2/$size 0 0 -6rem/2/$size;
+	background:url(/src/assets/imgs/buyStock/icon-warn.png) no-repeat;
+	background-size:contain;
+}
+
+.date-icon .icon-pointer{
+	width:20rem/$size;
+	height:20rem/$size;
+	margin:-20rem/2/$size 0 0 -20rem/2/$size;
+	background:url(/src/assets/imgs/buyStock/icon-pointer.png) no-repeat;
+	background-size:contain;
+}
+
+/*当前状态*/
+.date-box li.current .date-week{color:#fff;}
+.date-box li.current .date-number{color:#fff;}
+.date-box li.selected:before,.date-box li.selected:after{display:block;}
+
+.date-box li.selected .date-number{background:#ff5a54;color:#fff;border:2px solid #ff5a54;}
+
+
+/*下拉信息*/
+
+.date-stock-list{
+	position:absolute;
+	top:100%;
+	left:0;
+	width:100%;
+	background:#1a1c26;
+	z-index:512;
+}
+
+.date-stock-list:after{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:1px;
+	background:#383c51;
+	-webkit-transform:scaleY(0.5);
+}
+
+.date-stock-list .stock-box{
+	max-height:(590rem-66rem-77rem/2)/$size;
+	margin-top:(66rem-77rem/2)/$size;
+	padding:0 81rem/$size;
+	overflow:auto;
+}
+
+.stock-box dt{
+	height:(49rem+77rem)/$size;
+	line-height:(49rem+77rem)/$size;
+	padding:0 0 0 87rem/$size;
+	position:relative;
+}
+
+.stock-box .icon-shen,
+.stock-box .icon-hu{
+	content:'';
+	position:absolute;
+	left:0;
+	top:50%;
+	width:45rem/$size;
+	height:46rem/$size;
+	margin-top:-46rem/2/$size;
+}
+
+
+.stock-box .icon-shen{
+	background:url(/src/assets/imgs/buyStock/icon-stock-shen.png) no-repeat;
+	background-size:contain;
+}
+
+.stock-box .icon-hu{
+	background:url(/src/assets/imgs/buyStock/icon-stock-hu.png) no-repeat;
+	background-size:contain;
+}
+
+
+.stock-box .stock-name{
+	font-size:49rem/$size;
+	color:#fff;
+	opacity:0.8;
+}
+
+.stock-box .stock-number{
+	color:#767879;
+	font-size:43rem/$size;
+	margin-left:30rem/$size;
+}
+
+.stock-box .stock-status{
+	position:absolute;
+	right:0;
+	top:0;
+	font-size:43rem/$size;
+	color:#fff;
+	opacity:0.8;
+}
+
+.stock-box .stock-white{
+	opacity:1;
+}
+
+
+.stock-null{
+	text-align:center;
+	font-size:40rem/$size;
+	padding:187rem/$size 0 132rem/$size 0;
+	color:#767879;
+}
+
+.date-stock-close{
+	height:156rem/$size;
+	position:relative;
+}
+.date-stock-close .stock-icon{
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:41rem/$size;
+	height:43rem/$size;
+	margin:-43rem/2/$size 0 0 -41rem/2/$size;
+	background:url(/src/assets/imgs/buyStock/icon-stock-close.png) no-repeat;
+	background-size:contain;
+}
+
+/*错误提示*/
+.code-error-infor{
+	clear:both;
+	height:103rem/$size;
+	line-height:103rem/$size;
+	background:#f9e58b;
+	color:#ff5a54;
+	text-align:left;
+	padding:0 43rem/$size;
+	font-size:38rem/$size;
+	position:relative;
+}
+
+.code-error-infor .error-close{
+	width:41rem/$size;
+	height:42rem/$size;
+	position:absolute;
+	right:43rem/$size;
+	top:50%;
+	margin-top:-42rem/2/$size;
+	background:url(/src/assets/imgs/buyStock/icon-close.png) no-repeat;
+	background-size:contain;
+}
+
+/*信息提示*/
+.code-infor-msg{
+	clear:both;
+	height:103rem/$size;
+	line-height:103rem/$size;
+	background:#fe8f33;
+	font-size:38rem/$size;
+	color:#fff;
+	padding:0 43rem/$size 0 126rem/$size;
+	position:relative;
+}
+
+.code-infor-msg:after{
+	content:'';
+	position:absolute;
+	left:43rem/$size;
+	top:50%;
+	width:54rem/$size;
+	height:54rem/$size;
+	margin-top:-54rem/2/$size;
+	background:url(/src/assets/imgs/buyStock/icon-msg.png) no-repeat;
+	background-size:contain;
+}
+
+/*股票标题*/
+.buy-stock-code-tit{
+	clear:both;
+	height:116rem/$size;
+	line-height:116rem/$size;
+	background:#fff;
+	position:relative;
+	font-size:0;
+}
+.buy-stock-code-tit:before{
+	content:'';
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:2px;
+	height:36rem/$size;
+	margin-left:-1px;
+	margin-top:-16rem/$size;
+	background:#dddada;
+}
+
+.buy-stock-code-tit:after{
+	content:'';
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:1px;
+	background:#dddada;
+	-webkit-transform:scaleY(0.5);
+}
+.buy-stock-code-tit li{
+	display:inline-block;
+	width:50%;
+	height:116rem/$size;
+	position:relative;
+	font-size:46rem/$size;
+	color:#999;
+	padding:0 80rem/$size;
+	box-sizing:border-box;
+}
+
+.buy-stock-code-tit .tit-code{
+	position:absolute;
+	top:0;
+	right:80rem/$size;
+}
+
+
+/*主要内容*/
+.buy-stock-content{
+	box-sizing:border-box;
+	padding-bottom:191rem/$size;
+	position:relative;
+	background:#fff;
+}
+.buy-stock-content li{
+	float:left;
+	width:33.33%;
+	height:463rem/$size;
+	text-align:center;
+	position:relative;
+}
+.buy-stock-content li:after{
+	content:'';
+	width:2px;
+	height:100rem/$size;
+	background:#dddada;
+	position:absolute;
+	right:0;
+	top:50%;
+	margin-top:-100rem/2/$size;
+}
+.buy-stock-content li:last-child:after{
+	display:none;
+}
+
+.buy-stock-content .clr-a9a{color:#a9a9ac;}
+
+.buy-stock-content li em{
+	line-height:463rem/$size;
+	font-size:299.52rem/$size;
+}
+.buy-stock-content li span{
+	position:absolute;
+	left:0;
+	bottom:29rem/$size;
+	text-align:center;
+	width:100%;
+	color:#8b8b97;
+	font-size:40rem/$size;
+	line-height:1;
+}
+
+/*无内容*/
+.cont-null-text{
+	text-align:center;
+	color:#999;
+	font-size:48rem/$size;
+	margin-top:460rem/$size;
+}
+
+
+/*按钮*/
+.submit-btn{
+	position:fixed;
+	left:0;
+	bottom:0;
+	border:0;
+	outline:none;
+	width:100%;
+	height:161rem/$size;
+	font-size:52rem/$size;
+	background:#ff5a54;
+	color:#fff;
+}
+
+.submit-btn:disabled{
+	background:#bbb;
+}
+
+
+
+/*弹出层*/
+
+.ygm-dialog{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,.4);
+	z-index:1024;
+}
+
+
+
+
+/*弹出层---buy*/
+
+.dialog-buy-main{
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	background:#fff;
+	border-radius:8px;
+	width:percentage(976/1080);
+	box-sizing:border-box;
+	padding:0 80rem/$size;
+	overflow:hidden;
+}
+
+.dialog-buy-main .dialog-icon-warn{
+	display:block;
+	margin:136rem/$size auto 0 auto;
+	width:178rem/$size;
+	height:178rem/$size;
+	background:url(/src/assets/imgs/buyStock/dialog-warn.png) no-repeat;
+	background-size:contain;
+}
+
+/*文字*/
+.dialog-buy-text{
+	text-align:center;
+	padding:(80rem-16rem/2)/$size 20rem/$size (51rem-10rem-16rem/2)/$size 20rem/$size;
+}
+
+.dialog-buy-text p{
+	font-size:48rem/$size;
+	color:#666;
+	line-height:1;
+	padding:16rem/2/$size 0;
+}
+
+.dialog-buy-infor{
+	color:#999;
+	font-size:40rem/$size;
+	line-height:50rem/$size;
+}
+.dialog-buy-btn-group{
+	position:relative;
+}
+
+.dialog-buy-btn-group .dialog-buy-btn{
+	margin:(120rem-10rem)/$size 0 100rem/$size 0;
+	height:120rem/$size;
+	width:350rem/$size;
+	border:1px solid #ff5a54;
+	background:#fff;
+	color:#ff5a54;
+	font-size:48rem/$size;
+	border-radius:6px;
+	line-height:1;
+}
+
+.dialog-buy-btn-group .buy-btn-red{
+	background:#ff5a54;
+	color:#fff;
+}
+
+.dialog-buy-btn-group .buy-btn-rg{
+	position:absolute;
+	right:0;
+	top:0;
+}
+
+.dialog-buy-btn-group .buy-btn-total{
+	width:100%;
+}
+
+
+
+/*申购弹出*/
+.dialog-buy-other-main{
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%,-50%);
+	background:#fff;
+	border-radius:8px;
+	width:percentage(976/1080);
+	box-sizing:border-box;
+	padding:0 76rem/$size;
+	overflow:hidden;
+}
+
+.dialog-buy-other-cont{
+	margin-top:145rem/$size;
+	max-height:528rem/$size;
+	overflow:auto;
+}
+
+.dialog-buy-other-cont .dialog-dt{
+	height:130rem/$size;
+	line-height:130rem/$size;
+	border-radius:130rem/$size;
+	padding-left:133rem/$size;
+	background:#f4f4f4;
+	color:#333;
+	font-size:48rem/$size;
+	overflow:hidden;
+	position:relative;
+	margin-top:60rem/$size;
+}
+.dialog-buy-other-cont .dialog-dt:first-child{
+	margin-top:0;
+}
+.dialog-buy-other-cont .dialog-dt:after{
+	content:'';
+	position:absolute;
+	left:25rem/$size;
+	top:50%;
+	width:80rem/$size;
+	height:80rem/$size;
+	margin-top:-80rem/2/$size;
+}
+
+.dialog-buy-other-cont .dialog-dt.success:after{
+	background:url(/src/assets/imgs/buyStock/dialog-success.png) no-repeat;
+	background-size:contain;
+}
+
+.dialog-buy-other-cont .dialog-dt.error:after{
+	background:url(/src/assets/imgs/buyStock/dialog-error.png) no-repeat;
+	background-size:contain;
+}
+
+.dialog-buy-other-cont .dialog-dt em{
+	position:absolute;
+	right:52rem/$size;
+	top:0;
+}
+
+.dialog-buy-other-cont .dialog-dt-infor{
+	font-size:40rem/$size;
+	color:#999;
+	line-height:(40rem+11rem)/$size;
+	padding-top:(30rem-11rem/2)/$size;
+}
+
+.dialog-buy-other-cont .dialog-dt-infor + .dialog-dt{
+	margin-top:(60rem-11rem/2)/$size;
+}
+
+.dialog-buy-other-btn{
+	margin:110rem/$size 0 100rem/$size 0;
+	display:block;
+	width:100%;
+	height:134rem/$size;
+	background:#ff5a54;
+	color:#fff;
+	font-size:52rem/$size;
+	border-radius:6px;
+	line-height:1;
+}
+
+

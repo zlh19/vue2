@@ -1,0 +1,53 @@
+$size:40;
+
+/*头部导航*/
+.help-fare-header{
+	background:#222431;
+	color:#fff;
+	height:126rem/$size;
+	line-height:126rem/$size;
+	text-align:center;
+	position:relative;
+	font-size:52rem/$size;
+}
+
+
+.help-fare-header .icon-back{
+	position:absolute;
+	left:41rem/$size;
+	top:50%;
+	-webkit-transform:translate(0,-50%);
+	width:43rem/$size;
+	height:80rem/$size;
+	background:url(/src/assets/imgs/buyDay/icon-back.png) no-repeat;
+	background-size:contain;
+}
+
+.help-fare-header .icon-help{
+	position:absolute;
+	right:33rem/$size;
+	top:50%;
+	-webkit-transform:translate(0,-50%);
+	width:61rem/$size;
+	height:61rem/$size;
+	background:url(/src/assets/imgs/buyDay/icon-help.png) no-repeat;
+	background-size:contain;
+}
+
+
+/*主要内容*/
+.help-fare-article{
+	padding:0 70rem/$size 20rem/$size 70rem/$size;
+}
+
+.help-fare-article h3{
+	padding:14rem/$size;
+	font-size:43rem/$size;
+	color:#333;
+}
+.help-fare-article p{
+	text-indent:2em;
+	line-height:83rem/$size;
+	font-size:43rem/$size;
+	color:#999;
+}

@@ -1,0 +1,118 @@
+$size:40;
+
+@charset "UTF-8";
+html {
+    -webkit-text-size-adjust: none;
+    word-wrap: break-word;
+}
+
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.clearfix:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 48rem/$size;
+}
+
+img {
+    border: 0;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:active,
+a:focus {
+    outline: 0;
+    text-decoration: none;
+    opacity:0.5;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+body {
+    font-size: 44rem/$size;
+    line-height: 1;
+    color: #333;
+    font-family: Microsoft Yahei, Arial, Helvetica, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    background:#fff;
+    /*-webkit-user-select:none;-moz-user-focus:none;-moz-user-select:none;*/
+}
+
+select,
+input,
+textarea,
+button {
+    font-family: Microsoft Yahei, Arial, Helvetica, sans-serif;
+    -webkit-appearance: none;
+    outline: none;
+    border: 0;
+    border-radius: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+@font-face {
+  font-family: 'youguma';
+  src: url("/h5/module/buyNewStock/assets/css/font/DIN-Regular.ttf"); 
+}
+
+.ft-ygm{
+  font-family:'youguma'!important
+}
+
+.main{
+    position:absolute;
+    width:100%;
+    min-height:100%;
+    overflow:auto;
+}
+
