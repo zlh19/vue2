@@ -167,5 +167,5 @@
 	}
 </script>
 <style lang="sass" scoped>
-	@import '../assets/scss/buyRecord.scss';
+	@import '../assets/module/buyRecord/buyRecord.scss';
 </style>

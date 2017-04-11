@@ -42,14 +42,14 @@ $size:40;
 .ipt-gp .icon-tel{
 	width:40rem/$size;
 	height:61rem/$size;
-	background:url(/src/assets/imgs/login/icon-tel.png) no-repeat;
+	background:url(/src/assets/module/login/imgs/icon-tel.png) no-repeat;
 	background-size:contain;
 }
 
 .ipt-gp .icon-code{
 	width:45rem/$size;
 	height:47rem/$size;
-	background:url(/src/assets/imgs/login/icon-code.png) no-repeat;
+	background:url(/src/assets/module/login/imgs/icon-code.png) no-repeat;
 	background-size:contain;
 }
 
@@ -69,27 +69,7 @@ $size:40;
 	z-index:10;
 }
 
-/*验证码*/
-.ipt-gp .code-btn{
-	position:absolute;
-	right:0;
-	top:0;
-	width:370rem/$size;
-	height:110rem/$size;
-	border-radius:5px;
-	font-size:44rem/$size;
-	font-family:'microsoft yahei';
-	background:#ffb847;
-	color:#fff;
-	border:0;
-	z-index:20;
-}
 
-
-.ipt-gp .code-btn:disabled{
-	background:#ebebeb;
-	color:#888;
-}
 
 /*提交*/
 .btn-submit{
@@ -128,7 +108,7 @@ $size:40;
 .link-bottom .icon-next{
 	width:39rem/$size;
 	height:48rem/$size;
-	background:url(/src/assets/imgs/login/icon-next.png) no-repeat;
+	background:url(/src/assets/module/login/imgs/icon-next.png) no-repeat;
 	background-size:contain;
 	margin-left:30rem/$size;
 }

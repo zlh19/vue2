@@ -18,5 +18,5 @@
 	
 </script>
 <style lang="sass" scoped>
-	@import '../assets/scss/help.scss';
+	@import '../assets/module/help/help.scss';
 </style>

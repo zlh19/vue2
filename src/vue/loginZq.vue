@@ -49,5 +49,5 @@
 	}
 </script>
 <style lang="sass" scoped>
-	@import '../assets/scss/loginZq.scss';
+	@import '../assets/module/loginZq/loginZq.scss';
 </style>

@@ -5,6 +5,7 @@ $size:40;
 	text-align:center;
 	position:relative;
 	background:#222431;
+	font-size:42rem/$size;
 }
 
 .menu-title .icon-user{
@@ -14,7 +15,7 @@ $size:40;
 	width:61rem/$size;
 	height:61rem/$size;
 	margin-top:-61rem/2/$size;
-	background:url(/src/assets/imgs/buyRecord/icon-user.png) no-repeat;
+	background:url(/src/assets/widget/menu/imgs/icon-user.png) no-repeat;
 	background-size:contain;
 }
 
@@ -25,7 +26,7 @@ $size:40;
 	width:61rem/$size;
 	height:61rem/$size;
 	margin-top:-61rem/2/$size;
-	background:url(/src/assets/imgs/buyRecord/icon-help.png) no-repeat;
+	background:url(/src/assets/widget/menu/imgs/icon-help.png) no-repeat;
 	background-size:contain;
 }
 

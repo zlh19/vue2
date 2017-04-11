@@ -108,7 +108,7 @@ $size:40;
 	width:49rem/$size;
 	height:36rem/$size;
 	margin:-36rem/2/$size 0 0 -49rem/2/$size;
-	background:url(/src/assets/imgs/buyStock/icon-ok.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/icon-ok.png) no-repeat;
 	background-size:contain;
 }
 
@@ -116,7 +116,7 @@ $size:40;
 	width:6rem/$size;
 	height:49rem/$size;
 	margin:-49rem/2/$size 0 0 -6rem/2/$size;
-	background:url(/src/assets/imgs/buyStock/icon-warn.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/icon-warn.png) no-repeat;
 	background-size:contain;
 }
 
@@ -124,7 +124,7 @@ $size:40;
 	width:20rem/$size;
 	height:20rem/$size;
 	margin:-20rem/2/$size 0 0 -20rem/2/$size;
-	background:url(/src/assets/imgs/buyStock/icon-pointer.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/icon-pointer.png) no-repeat;
 	background-size:contain;
 }
 
@@ -185,12 +185,12 @@ $size:40;
 
 
 .stock-box .icon-shen{
-	background:url(/src/assets/imgs/buyStock/icon-stock-shen.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/icon-stock-shen.png) no-repeat;
 	background-size:contain;
 }
 
 .stock-box .icon-hu{
-	background:url(/src/assets/imgs/buyStock/icon-stock-hu.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/icon-stock-hu.png) no-repeat;
 	background-size:contain;
 }
 
@@ -239,7 +239,7 @@ $size:40;
 	width:41rem/$size;
 	height:43rem/$size;
 	margin:-43rem/2/$size 0 0 -41rem/2/$size;
-	background:url(/src/assets/imgs/buyStock/icon-stock-close.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/icon-stock-close.png) no-repeat;
 	background-size:contain;
 }
 
@@ -263,7 +263,7 @@ $size:40;
 	right:43rem/$size;
 	top:50%;
 	margin-top:-42rem/2/$size;
-	background:url(/src/assets/imgs/buyStock/icon-close.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/icon-close.png) no-repeat;
 	background-size:contain;
 }
 
@@ -287,7 +287,7 @@ $size:40;
 	width:54rem/$size;
 	height:54rem/$size;
 	margin-top:-54rem/2/$size;
-	background:url(/src/assets/imgs/buyStock/icon-msg.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/icon-msg.png) no-repeat;
 	background-size:contain;
 }
 
@@ -449,7 +449,7 @@ $size:40;
 	margin:136rem/$size auto 0 auto;
 	width:178rem/$size;
 	height:178rem/$size;
-	background:url(/src/assets/imgs/buyStock/dialog-warn.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/dialog-warn.png) no-repeat;
 	background-size:contain;
 }
 
@@ -550,12 +550,12 @@ $size:40;
 }
 
 .dialog-buy-other-cont .dialog-dt.success:after{
-	background:url(/src/assets/imgs/buyStock/dialog-success.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/dialog-success.png) no-repeat;
 	background-size:contain;
 }
 
 .dialog-buy-other-cont .dialog-dt.error:after{
-	background:url(/src/assets/imgs/buyStock/dialog-error.png) no-repeat;
+	background:url(/src/assets/module/buyStock/imgs/dialog-error.png) no-repeat;
 	background-size:contain;
 }
 

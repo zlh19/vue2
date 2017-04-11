@@ -18,8 +18,7 @@
 			}
 		}
 	}
-	
 </script>
 <style lang="sass">
-	@import '../assets/scss/tips.scss';
+	@import '../assets/widget/tips/tips.scss';
 </style>

@@ -99,5 +99,5 @@
 	}
 </script>
 <style lang="sass" scoped>
-	@import '../assets/scss/buyDay.scss';
+	@import '../assets/module/buyDay/buyDay.scss';
 </style>

@@ -18,5 +18,5 @@
 	
 </script>
 <style lang="sass" scoped>
-	@import '../assets/scss/helpFare.scss';
+	@import '../assets/module/helpFare/helpFare.scss';
 </style>

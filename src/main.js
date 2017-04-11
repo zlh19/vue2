@@ -1,18 +1,22 @@
 var Vue = require('vue');
 var VueTap = require('v-tap');
-var router = require('./router/router.js').router;
+var VueAwesomeSwiper = require('vue-awesome-swiper');
 var App = require('./App.vue');
+
+var router = require('./router/router.js').router;
 var store=require('./store/store.js').store;
 
-var VueResource = require('vue-resource');
+// var VueResource = require('vue-resource');
 
-require('./assets/css/reset.scss');
+Vue.use(VueAwesomeSwiper)
+
+require('./assets/public/css/reset.scss');
 
 // 引入px与rem的换算
-require('./assets/js/model').remToPxFun();
+require('./assets/public/js/model').remToPxFun();
 
 //实例化vue模块 
-Vue.use(VueResource);
+// Vue.use(VueResource);
 Vue.use(VueTap)
 
 // 创建一个空组件

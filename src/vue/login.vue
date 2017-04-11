@@ -2,19 +2,21 @@
 	<div id="login">
 		<div class="main">
 			<div class="p-main">
+				<!-- 说明 -->
 		        <div class="p-infor">
 		            <p class="top-infor">进行手机号码注册认证，感谢您的配合。</p>
 		        </div>
 		        <!-- 手机号码 -->
 		        <div class="ipt-gp">
 		            <i class="icon-ipt icon-tel"></i>
-		            <input type="number" class="ipt-text" placeholder="请输入手机号" v-model="userTel" @keyup="inputKeyupFun">
+		            <input type="tel" class="ipt-text" placeholder="请输入手机号" maxlength="11" v-model="userTel" @keyup="telInputKeyUp">
 		        </div>
-		        <!-- 密码 -->
+		        <!-- 验证码 -->
 		        <div class="ipt-gp">
 		            <i class="icon-ipt icon-code"></i>
-		            <input type="number" class="ipt-text" placeholder="验证码" v-model="userCode" @keyup="inputKeyupFun">
-		            <button class="code-btn" :disabled="disabledCodeBtn" v-tap="{methods:codeBtnClickFun}" v-text="codeText"></button>
+		            <input type="tel" class="ipt-text" placeholder="验证码" maxlength="4" v-model="userCode" @keyup="inputKeyupFun">
+		            <!-- 倒计时 -->
+		            <count-down></count-down>
 		        </div>
 		        <!-- 按钮 -->
 		        <button class="btn-submit" :disabled="disabledSubmitBtn" v-tap="{methods:submitBtnClickFun}">验证</button>
@@ -26,21 +28,26 @@
 </template>
 <script>
 	var nvTips=require('../components/tips.vue')
+	var countDown=require('../components/countDown.vue')
 	module.exports={
 		data:function(){
 			return{
 				userTel:'',
 				userCode:'',
-				disabledSubmitBtn:true,
-				disabledCodeBtn:false,
-				codeText:'获取验证码'
+				disabledSubmitBtn:true
 			}
 		},
-		mounted:function(){
-
-			 
-		},
 		methods:{
+			// 手机跳转
+			telInputKeyUp:function(){
+				var countDownStatus=this.$store.state.countDownIsTap;
+				if(this.userTel.length==11&&countDownStatus==false){
+					this.$store.dispatch('aCountDownDisabled',false)
+				}else{
+					this.$store.dispatch('aCountDownDisabled',true)
+				}
+				this.inputKeyupFun();
+			},
 			// 输入框按钮
 			inputKeyupFun:function(){
 				var that=this;
@@ -51,39 +58,28 @@
 					that.disabledSubmitBtn=true
 				}
 			},
-			// 倒计时点击事件
-			codeBtnClickFun:function(){
-				var that=this;
-				this.smsCodeCount( 59 );
-			},
-			smsCodeCount:function(count){
-				var that=this;
-				if( count === 0 ){
-	                that.codeText="获取验证码";
-					that.disabledCodeBtn=false;
-	            } else {
-	            	that.disabledCodeBtn=true;
-	            	that.codeText= count-- + "s后重发";
-	                that.timer=setTimeout(function(){
-	                    that.smsCodeCount(count)
-	                },1000)
-	            }
-			},
 			// 登录按钮
 			submitBtnClickFun:function(){
 				var that=this;
-				// this.$store.dispatch('isShowTips', true);
-				this.$store.commit('setShowTips',true)
-				this.$store.commit('setShowTipsContent','1111')
+
+				if(that.userTel=='11111111111'&&that.userCode=='1111'){
+					this.$router.push('/buyStock')
+				}else{
+					// 弹出层
+					this.$store.dispatch('aSetShowTips',true)
+					this.$store.dispatch('aSetShowTipsContent','帐号验证码全为1')
+				}
+				
 			}
 	
 		},
 		components : {
-            nvTips
+            nvTips,
+            countDown
         }
 	}
 	
 </script>
 <style lang="sass" scoped>
-	@import '../assets/scss/login.scss';
+	@import '../assets/module/login/login.scss';
 </style>

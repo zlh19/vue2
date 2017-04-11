@@ -1,6 +1,6 @@
 var Vue = require('vue')
 var VueRouter = require('vue-router');
-var setWechatTitleFun = require('../assets/js/model').setWechatTitleFun;
+var setWechatTitleFun = require('../assets/public/js/model').setWechatTitleFun;
 
 
 // 实例化VueRouter
@@ -14,24 +14,6 @@ var routes = [{ //首页
         title: '首页'
     },
     redirect: '/loginEnter'
-},{ //首页
-    path: '/loginEnter',
-    name: 'loginEnter',
-    meta: {
-        title: '登录'
-    },
-    component: function(resolve) {
-        require(['../vue/loginEnter.vue'], resolve);
-    }
-},{
-    path: '/loginZq',
-    name: 'loginZq',
-    meta: {
-        title: '登录'
-    },
-    component: function(resolve) {
-        require(['../vue/loginZq.vue'], resolve);
-    }
 },{
     path: '/login',
     name: 'login',
@@ -40,15 +22,6 @@ var routes = [{ //首页
     },
     component: function(resolve) {
         require(['../vue/login.vue'], resolve);
-    }
-},{
-    path: '/helpFare',
-    name: 'helpFare',
-    meta: {
-        title: '帮助'
-    },
-    component: function(resolve) {
-        require(['../vue/helpFare.vue'], resolve);
     }
 },{
     path: '/help',
@@ -63,7 +36,7 @@ var routes = [{ //首页
     path: '/buyStock',
     name: 'buyStock',
     meta: {
-        title: '股票申购'
+        title: '首页'
     },
     component: function(resolve) {
         require(['../vue/buyStock.vue'], resolve);
@@ -72,7 +45,7 @@ var routes = [{ //首页
     path: '/buyRecord',
     name: 'buyRecord',
     meta: {
-        title: '申购记录'
+        title: '列表页'
     },
     component: function(resolve) {
         require(['../vue/buyRecord.vue'], resolve);
@@ -81,7 +54,7 @@ var routes = [{ //首页
     path: '/buyDay',
     name: 'buyDay',
     meta: {
-        title: '申购'
+        title: '选择页面'
     },
     component: function(resolve) {
         require(['../vue/buyDay.vue'], resolve);

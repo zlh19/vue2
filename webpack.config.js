@@ -52,6 +52,11 @@ module.exports = {
         loader: ExtractTextPlugin.extract("style-loader", "css-loader")
       },
       {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel?sourceMap'
+      },
+      {
         test: /\.(png|jpg|ttf)$/,
         loader: 'url?limit=40000'
       }
@@ -61,6 +66,10 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.js'
     }
+  },
+  babel: {
+    // 告诉babel你要解析的语言
+    presets: ['es2015']
   },
   vue: {
     css: ExtractTextPlugin.extract("css"),
