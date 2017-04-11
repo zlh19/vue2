@@ -29,24 +29,14 @@
 		    <!-- 按钮 -->
 		    <button class="submit-btn" :disabled="submitBtnDisabled">提交</button>
 		    <!-- 申购成功 -->
-		    <div class="ygm-dialog" v-if="buySuccessDialog">
-		        <div class="dialog-buy-other-main">
-		            <div class="dialog-buy-other-cont">
-		                <!-- dt -->
-		                <div class="dialog-dt success"><span>山东赫达</span><em>申购成功</em></div>
-		                <div class="dialog-dt error"><span>山东赫达</span><em>申购已提交</em></div>
-		                <p class="dialog-dt-infor">申购提交后未查询到状态，请稍后查询委托以确保没有废单产生</p>
-		                <div class="dialog-dt error"><span>山东赫达</span><em>申购已提交</em></div>
-		            </div>
-		            <button class="dialog-buy-other-btn">确定</button>
-		        </div>
-		    </div>
+		    
 		</div>
 	</div>
 </template>
 <script>
 	var nvMenu=require('../components/menu.vue');
 	var nvDate=require('../components/date.vue');
+	var nvDialog=require('../components/dialog.vue');
 	module.exports={
 		data:function(){
 			return{
@@ -68,7 +58,8 @@
 		},
 		components:{
 			nvMenu,
-			nvDate
+			nvDate,
+			nvDialog
 		}
 	}
 </script>

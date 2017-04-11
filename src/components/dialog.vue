@@ -1,15 +1,15 @@
 <template>
-	<div id="dialogLogin">
-		<div class="ygm-dialog" v-if="isShowDialogLogin">
-	        <div class="dialog-user-main">
-	            <div class="dialog-user-text">
-	                <p>已登录恒泰证券</p>
-	                <p>资金账号：{{userAccount}}</p>
+	<div id="dialog">
+		<div class="ygm-dialog" v-if="isShowDialog">
+	        <div class="dialog-buy-other-main">
+	            <div class="dialog-buy-other-cont">
+	                <!-- dt -->
+	                <div class="dialog-dt success"><span>山东赫达</span><em>申购成功</em></div>
+	                <div class="dialog-dt error"><span>山东赫达</span><em>申购已提交</em></div>
+	                <p class="dialog-dt-infor">申购提交后未查询到状态，请稍后查询委托以确保没有废单产生</p>
+	                <div class="dialog-dt error"><span>山东赫达</span><em>申购已提交</em></div>
 	            </div>
-	            <div class="dialog-user-btn-group">
-	                <button class="dialog-user-btn" v-tap="{methods:cancelLoginOutBtn}">取消</button>
-	                <button class="dialog-user-btn user-btn-red" v-tap="{methods:loginOutBtn}">退出</button>
-	            </div>
+	            <button class="dialog-buy-other-btn">确定</button>
 	        </div>
 	    </div>
 	</div>
@@ -40,5 +40,5 @@
 	
 </script>
 <style lang="sass">
-	@import '../assets/widget/dialogLogin/dialogLogin.scss';
+	@import '../assets/widget/dialog/dialog.scss';
 </style>
