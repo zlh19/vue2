@@ -139,17 +139,17 @@ $size:40;
 	-webkit-transform:translate(0,-50%);
 	width:80rem/$size;
 	height:80rem/$size;
-	background:url(/src/assets/imgs/buyDay/check.png) no-repeat;
+	background:url(/src/assets/module/buyDay/imgs/check.png) no-repeat;
 	background-size:contain;
 }
 
 .buy-day-content dt .checkbox:checked{
-	background:url(/src/assets/imgs/buyDay/checked.png) no-repeat;
+	background:url(/src/assets/module/buyDay/imgs/checked.png) no-repeat;
 	background-size:contain;
 }
 
 .buy-day-content dt .checkbox:disabled{
-	background:url(/src/assets/imgs/buyDay/check-disabled.png) no-repeat;
+	background:url(/src/assets/module/buyDay/imgs/check-disabled.png) no-repeat;
 	background-size:contain;
 }
 

@@ -18,7 +18,8 @@ var routes = [{ //首页
     path: '/login',
     name: 'login',
     meta: {
-        title: '登录'
+        title: '登录',
+        isLogin:0
     },
     component: function(resolve) {
         require(['../vue/login.vue'], resolve);
@@ -27,7 +28,8 @@ var routes = [{ //首页
     path: '/help',
     name: 'help',
     meta: {
-        title: '帮助'
+        title: '帮助',
+        isLogin:1
     },
     component: function(resolve) {
         require(['../vue/help.vue'], resolve);
@@ -36,7 +38,8 @@ var routes = [{ //首页
     path: '/buyStock',
     name: 'buyStock',
     meta: {
-        title: '首页'
+        title: '首页',
+        isLogin:1
     },
     component: function(resolve) {
         require(['../vue/buyStock.vue'], resolve);
@@ -45,7 +48,8 @@ var routes = [{ //首页
     path: '/buyRecord',
     name: 'buyRecord',
     meta: {
-        title: '列表页'
+        title: '列表页',
+        isLogin:1
     },
     component: function(resolve) {
         require(['../vue/buyRecord.vue'], resolve);
@@ -54,14 +58,15 @@ var routes = [{ //首页
     path: '/buyDay',
     name: 'buyDay',
     meta: {
-        title: '选择页面'
+        title: '选择页面',
+        isLogin:1
     },
     component: function(resolve) {
         require(['../vue/buyDay.vue'], resolve);
     }
 }, {
     path: '*',
-    redirect: '/loginEnter'
+    redirect: '/buyStock'
 }]
 
 
@@ -76,10 +81,28 @@ var router = new VueRouter({
 //     transitionOnLoad: true
 })
 
-
-router.afterEach(function(to, form, next) {
+router.beforeEach((to, from, next) => {
     setWechatTitleFun(to.meta.title);
+    if(to.meta.isLogin==1){
+        var fundAccount=getCookie('zlhIsLogin');
+        if(!fundAccount){
+           next('/login')
+        }else{
+           next();
+        }
+    }else{
+        next();
+    }
 })
+
+function getCookie(name){
+    var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+    if(arr=document.cookie.match(reg)){
+        return unescape(arr[2]);
+    }else{
+        return false;
+    }  
+}
 
 module.exports = {
     router: router

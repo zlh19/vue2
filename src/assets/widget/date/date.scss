@@ -35,9 +35,12 @@ $size:40;
     padding:0 0 0 1.609%;
 }
 
+.date-box ul{
+    display:flex;
+}
+
 .date-box li{
-    float:left;
-    padding:0 3.068%;
+    flex:1;
     text-align:center;
     position:relative;
 }

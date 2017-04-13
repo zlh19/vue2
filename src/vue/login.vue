@@ -63,6 +63,8 @@
 				var that=this;
 
 				if(that.userTel=='11111111111'&&that.userCode=='1111'){
+					this.$cookie.set('zlhIsLogin',true,{ expires: '100Y' });
+					this.$cookie.set('zlhAccount',that.userTel,{ expires: '100Y' });
 					this.$router.push('/buyStock')
 				}else{
 					// 弹出层
