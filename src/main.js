@@ -11,10 +11,10 @@ var store=require('./store/store.js').store;
 
 Vue.use(VueAwesomeSwiper)
 
-require('./assets/public/css/reset.scss');
+require('./public/css/reset.scss');
 
 // 引入px与rem的换算
-require('./assets/public/js/model').remToPxFun();
+require('./public/js/model').remToPxFun();
 
 //实例化vue模块 
 // Vue.use(VueResource);

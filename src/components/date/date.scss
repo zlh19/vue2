@@ -1,0 +1,140 @@
+$size:40;
+
+
+/*主要内容*/
+.buy-stock-date{
+    height:(610rem-126rem)/$size;
+    background:#222431;
+    padding:0 43rem/$size;
+    position:relative; 
+}
+
+/*左右切换*/
+.icon-page{
+    position:absolute;
+    top:50%;
+    width:0;
+    height:0;
+    border-top:35rem/2/$size solid transparent;
+    border-bottom:35rem/2/$size solid transparent;
+    margin-top:-22rem/$size;
+}
+
+.icon-page.icon-prev{
+    border-right:22rem/$size solid #3c3f4c;
+    left:20rem/$size;
+}
+
+.icon-page.icon-next{
+    border-left:22rem/$size solid #3c3f4c;
+    right:20rem/$size
+}
+
+/*日期*/
+.date-box{
+    padding:0 0 0 1.609%;
+}
+
+.date-box ul{
+    display:flex;
+}
+
+.date-box li{
+    flex:1;
+    text-align:center;
+    position:relative;
+}
+
+.date-box li:after,.date-box li:before{
+    content:'';
+    position:absolute;
+    left:50%;
+    width:0;
+    height:0;
+    border-left:26rem/$size solid transparent;
+    border-right:26rem/$size solid transparent;
+    margin-left:-26rem/$size;
+    display:none;
+}
+
+.date-box li:before{
+    border-bottom:26rem/$size solid #333649;
+    bottom:0;
+    z-index:520;
+}
+
+.date-box li:after{
+    border-bottom:26rem/$size solid #1a1c26;
+    bottom:-1px;
+    z-index:521;
+}
+
+
+.buy-stock-date .date-week{
+    font-size:46.44rem/$size;
+    color:#767879;
+    line-height:166rem/$size;
+}
+
+.buy-stock-date .date-number{
+    width:132rem/$size;
+    height:132rem/$size;
+    line-height:132rem/$size;
+    box-sizing:border-box;
+    border:2px solid #373945;
+    border-radius:50%;
+    overflow:hidden;
+    margin:0 auto;
+    font-size:73.75rem/$size;
+    color:#767879;
+}
+
+.buy-stock-date .date-number em{
+    line-height:0;
+    margin:0;
+    padding:0;
+    margin-left:-7rem/$size;
+}
+
+.date-icon{
+    height:187rem/$size;
+    line-height:187rem/$size;
+    position:relative;
+}
+
+.date-icon i{
+    position:absolute;
+    left:50%;
+    top:50%;
+}
+.date-icon .icon-ok{
+    width:49rem/$size;
+    height:36rem/$size;
+    margin:-36rem/2/$size 0 0 -49rem/2/$size;
+    background:url(imgs/icon-ok.png) no-repeat;
+    background-size:contain;
+}
+
+.date-icon .icon-warn{
+    width:6rem/$size;
+    height:49rem/$size;
+    margin:-49rem/2/$size 0 0 -6rem/2/$size;
+    background:url(imgs/icon-warn.png) no-repeat;
+    background-size:contain;
+}
+
+.date-icon .icon-pointer{
+    width:20rem/$size;
+    height:20rem/$size;
+    margin:-20rem/2/$size 0 0 -20rem/2/$size;
+    background:url(imgs/icon-pointer.png) no-repeat;
+    background-size:contain;
+}
+
+/*当前状态*/
+.date-box li.current .date-week{color:#fff;}
+.date-box li.current .date-number{color:#fff;}
+.date-box li.selected:before,.date-box li.selected:after{display:block;}
+
+.date-box li.selected .date-number{background:#ff5a54;color:#fff;border:2px solid #ff5a54;}
+

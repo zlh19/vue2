@@ -45,16 +45,16 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loader: ExtractTextPlugin.extract("style-loader", 'css-loader')
+        loader: ExtractTextPlugin.extract("style-loader?sourceMap", 'css-loader?sourceMap')
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+        loader: ExtractTextPlugin.extract("style-loader?sourceMap", "css-loader?sourceMap")
       },
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel?sourceMap'
+        loader: 'babel?sourceMap',
+        exclude: /node_modules/
       },
       {
         test: /\.(png|jpg|ttf)$/,
@@ -63,9 +63,7 @@ module.exports = {
     ]
   },
   resolve: {
-    alias: {
-      'vue$': 'vue/dist/vue.js'
-    }
+    extensions: ['', '.js', '.vue']
   },
   babel: {
     // 告诉babel你要解析的语言

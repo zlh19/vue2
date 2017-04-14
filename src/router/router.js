@@ -1,6 +1,6 @@
 var Vue = require('vue')
 var VueRouter = require('vue-router');
-var setWechatTitleFun = require('../assets/public/js/model').setWechatTitleFun;
+var setWechatTitleFun = require('../public/js/model').setWechatTitleFun;
 
 
 // 实例化VueRouter
@@ -22,7 +22,7 @@ var routes = [{ //首页
         isLogin:0
     },
     component: function(resolve) {
-        require(['../vue/login.vue'], resolve);
+        require(['../vue/login/login.vue'], resolve);
     }
 },{
     path: '/help',
@@ -32,7 +32,7 @@ var routes = [{ //首页
         isLogin:1
     },
     component: function(resolve) {
-        require(['../vue/help.vue'], resolve);
+        require(['../vue/help/help.vue'], resolve);
     }
 },{
     path: '/buyStock',
@@ -42,7 +42,7 @@ var routes = [{ //首页
         isLogin:1
     },
     component: function(resolve) {
-        require(['../vue/buyStock.vue'], resolve);
+        require(['../vue/buyStock/buyStock.vue'], resolve);
     }
 }, {
     path: '/buyRecord',
@@ -52,7 +52,7 @@ var routes = [{ //首页
         isLogin:1
     },
     component: function(resolve) {
-        require(['../vue/buyRecord.vue'], resolve);
+        require(['../vue/buyRecord/buyRecord.vue'], resolve);
     }
 }, {
     path: '/buyDay',
@@ -62,7 +62,7 @@ var routes = [{ //首页
         isLogin:1
     },
     component: function(resolve) {
-        require(['../vue/buyDay.vue'], resolve);
+        require(['../vue/buyDay/buyDay.vue'], resolve);
     }
 }, {
     path: '*',

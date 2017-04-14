@@ -1,0 +1,119 @@
+$size:40;
+.main{background:#f4f4f4;}
+
+.buy-record-content{
+	padding-bottom:100rem/$size;
+	background:#f4f4f4;
+}
+
+/*主要内容*/
+.buy-record-content dt{
+	background:#fff;
+	margin-top:30rem/$size;
+	padding:0 43rem/$size;
+	position:relative;
+}
+
+.buy-record-content dt:first-child{
+	margin-top:0;
+}
+
+.buy-record-content .icon-flag{
+	position:absolute;
+	right:43rem/$size;
+	top:0;
+	height:100rem/$size;
+	line-height:100rem/$size;
+	border-radius:0 0 8px 8px;
+	color:#fff;
+	font-size:40rem/$size;
+	padding:0 46rem/$size;
+}
+.buy-record-content .bg-red{background:#ff5a54;}
+
+.buy-record-content .bg-blue{background:#31a7e5;}
+
+.buy-record-content .bg-bbb{background:#bbb;}
+
+/*标题*/
+.buy-record-content .stock-title{
+	height:151rem/$size;
+	padding:(151rem-56rem)/2/$size 0;
+	line-height:1;
+	box-sizing:border-box;
+	position:relative;
+}
+
+.buy-record-content .stock-title:after{
+	content:'';
+	position:absolute;
+	left:0;
+	bottom:0;
+	width:100%;
+	height:1px;
+	background:#dddada;
+	-webkit-transform:scaleY(0.5);
+}
+
+.stock-title span{
+	font-size:56rem/$size;
+	color:#333;
+}
+
+.stock-title em{
+	font-size:40rem/$size;
+	color:#999;
+	margin-left:22rem/$size;
+	vertical-align:middle;
+}
+
+
+/*详情*/
+.stock-del{
+	position:relative;
+	height:107rem/$size;
+	overflow:hidden;
+	color:#999;
+	font-size:40rem/$size;
+}
+.stock-del.current{
+	padding:13rem/$size 0 26rem/$size 0;
+	height:auto;
+}
+
+.stock-del .del-tit{
+	line-height:107rem/$size;
+}
+
+.stock-del.current .del-tit{
+	line-height:1;
+	padding:16rem/$size 0;
+}
+
+.stock-del p{
+	padding:16rem/$size 0;
+	line-height:1;
+	font-size:40rem/$size;
+}
+
+.stock-del .icon-more{
+	width:56rem/$size;
+	height:31rem/$size;
+	position:absolute;
+	right:20rem/$size;
+	top:37rem/$size;
+	background:url(imgs/icon-more.png) no-repeat;
+	background-size:contain;
+}
+
+.stock-del .icon-more.current{
+	-webkit-transform:rotate(180deg);
+}
+
+/*更多内容*/
+.more-text{
+	margin-top:125rem/$size;
+	text-align:center;
+	color:#999;
+	font-size:40rem/$size;
+}

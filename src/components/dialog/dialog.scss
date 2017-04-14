@@ -1,0 +1,103 @@
+$size:40;
+
+
+/*弹出层*/
+
+.ygm-dialog {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    z-index: 1024;
+}
+
+
+
+/*申购弹出*/
+
+.dialog-buy-other-main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 8px;
+    width: percentage(976/1080);
+    box-sizing: border-box;
+    padding: 0 76rem/$size;
+    overflow: hidden;
+}
+
+.dialog-buy-other-cont {
+    margin-top: 145rem/$size;
+    max-height: 528rem/$size;
+    overflow: auto;
+}
+
+.dialog-buy-other-cont .dialog-dt {
+    height: 130rem/$size;
+    line-height: 130rem/$size;
+    border-radius: 130rem/$size;
+    padding-left: 133rem/$size;
+    background: #f4f4f4;
+    color: #333;
+    font-size: 48rem/$size;
+    overflow: hidden;
+    position: relative;
+    margin-top: 60rem/$size;
+}
+
+.dialog-buy-other-cont .dialog-dt:first-child {
+    /*margin-top: 0;*/
+}
+
+.dialog-buy-other-cont .dialog-dt:after {
+    content: '';
+    position: absolute;
+    left: 25rem/$size;
+    top: 50%;
+    width: 80rem/$size;
+    height: 80rem/$size;
+    margin-top: -80rem/2/$size;
+}
+
+.dialog-buy-other-cont .dialog-dt.success:after {
+    background: url(imgs/dialog-success.png) no-repeat;
+    background-size: contain;
+}
+
+.dialog-buy-other-cont .dialog-dt.error:after {
+    background: url(imgs/dialog-error.png) no-repeat;
+    background-size: contain;
+}
+
+.dialog-buy-other-cont .dialog-dt em {
+    position: absolute;
+    right: 52rem/$size;
+    top: 0;
+}
+
+.dialog-buy-other-cont .dialog-dt-infor {
+    font-size: 40rem/$size;
+    color: #999;
+    line-height: (40rem+11rem)/$size;
+    padding-top: (30rem-11rem/2)/$size;
+}
+
+.dialog-buy-other-cont .dialog-dt-infor + .dialog-dt {
+    margin-top: (60rem-11rem/2)/$size;
+}
+
+.dialog-buy-other-btn {
+    margin: 110rem/$size 0 100rem/$size 0;
+    display: block;
+    width: 100%;
+    height: 134rem/$size;
+    background: #ff5a54;
+    color: #fff;
+    font-size: 52rem/$size;
+    border-radius: 6px;
+    line-height: 1;
+}
