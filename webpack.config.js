@@ -15,7 +15,7 @@ var plugins = [
   new webpack.optimize.CommonsChunkPlugin('common.js'),
 	//将样式统一发布到style.css中
   new ExtractTextPlugin("style.css", {
-    allChunks: true 
+    allChunks: true
   }),
   // 使用 ProvidePlugin 加载使用率高的依赖库
   new webpack.ProvidePlugin({
