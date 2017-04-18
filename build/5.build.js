@@ -3602,7 +3602,7 @@ webpackJsonp([5,6],Array(72).concat([
 
 
 	// module
-	exports.push([module.id, "\n@charset \"UTF-8\";\n.main[data-v-000d0eb8] {\n  background: #f4f4f4;\n}\n\n/*头部导航*/\n.header[data-v-000d0eb8] {\n  background: #222431;\n  color: #fff;\n  height: 3.15rem;\n  line-height: 3.15rem;\n  text-align: center;\n  position: relative;\n  font-size: 1.3rem;\n}\n.header .icon-back[data-v-000d0eb8] {\n  position: absolute;\n  left: 1.025rem;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n  width: 1.075rem;\n  height: 2rem;\n  background: url(" + __webpack_require__(112) + ") no-repeat;\n  background-size: contain;\n}\n.header .icon-help[data-v-000d0eb8] {\n  position: absolute;\n  right: 0.825rem;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n  width: 1.525rem;\n  height: 1.525rem;\n  background: url(" + __webpack_require__(113) + ") no-repeat;\n  background-size: contain;\n}\n\n/*主要内容*/\n/*头部信息*/\n.buy-day-top[data-v-000d0eb8] {\n  position: relative;\n  background: #fff;\n  padding: 0 1.075rem;\n  color: #666;\n}\n.buy-day-top[data-v-000d0eb8]:after {\n  content: '';\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: 1px;\n  background: #dddada;\n  -webkit-transform: scaleY(0.5);\n}\n.buy-day-top .top-tit[data-v-000d0eb8] {\n  line-height: 2.05rem;\n  color: #999;\n  font-size: 1rem;\n}\n.buy-day-top .top-infor[data-v-000d0eb8] {\n  position: relative;\n}\n.buy-day-top .top-infor[data-v-000d0eb8]:after {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  height: 0.05rem;\n  width: 2px;\n  height: 1.225rem;\n  background: #dddada;\n  -webkit-transform: translate(-50%, -50%);\n}\n.buy-day-top .top-infor li[data-v-000d0eb8] {\n  float: left;\n  height: 3.7rem;\n  width: 50%;\n  position: relative;\n  box-sizing: border-box;\n  font-size: 1.2rem;\n  padding: 1.25rem 0;\n  line-height: 1;\n}\n.buy-day-top .top-infor .text-right[data-v-000d0eb8] {\n  padding-left: 1.75rem;\n}\n.buy-day-top .top-infor .text-left[data-v-000d0eb8] {\n  padding-right: 1.75rem;\n}\n.buy-day-top .top-infor li em[data-v-000d0eb8] {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n}\n\n/*主要内容*/\n.section[data-v-000d0eb8] {\n  padding-bottom: 4.775rem;\n}\n.buy-day-content .cont-tit[data-v-000d0eb8] {\n  line-height: 2.5rem;\n  padding-left: 1.075rem;\n  color: #999;\n}\n.buy-day-content dt[data-v-000d0eb8] {\n  background: #fff;\n  line-height: 1;\n  height: 7.025rem;\n  padding-left: 4.225rem;\n  position: relative;\n  margin-bottom: 0.75rem;\n}\n.buy-day-content > dl dt[data-v-000d0eb8]:last-child {\n  margin-bottom: 0;\n}\n\n/*checkbox*/\n.buy-day-content dt .checkbox[data-v-000d0eb8] {\n  position: absolute;\n  left: 1.075rem;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n  width: 2rem;\n  height: 2rem;\n  background: url(" + __webpack_require__(114) + ") no-repeat;\n  background-size: contain;\n}\n.buy-day-content dt .checkbox[data-v-000d0eb8]:checked {\n  background: url(" + __webpack_require__(115) + ") no-repeat;\n  background-size: contain;\n}\n.buy-day-content dt .checkbox[data-v-000d0eb8]:disabled {\n  background: url(" + __webpack_require__(116) + ") no-repeat;\n  background-size: contain;\n}\n\n/*顶部*/\n.buy-day-content dt .infor-code[data-v-000d0eb8] {\n  font-size: 1.4rem;\n  position: relative;\n  padding: 1.625rem 0 1.475rem 0;\n}\n.infor-code .code-name[data-v-000d0eb8] {\n  color: #333;\n}\n.infor-code .code-code[data-v-000d0eb8] {\n  font-size: 1.1rem;\n  color: #666;\n  padding-left: 0.625rem;\n}\n.infor-code .code-text[data-v-000d0eb8] {\n  color: #666;\n  font-size: 1.4rem;\n  position: absolute;\n  right: 1.075rem;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n}\n.infor-code .code-num[data-v-000d0eb8] {\n  color: #333;\n  font-size: 1.5rem;\n}\n\n/*其他*/\n.infor-other[data-v-000d0eb8] {\n  font-size: 1rem;\n  color: #666;\n  position: relative;\n}\n.infor-other .other-text[data-v-000d0eb8] {\n  position: absolute;\n  right: 1.075rem;\n  top: 0;\n}\n\n/*按钮*/\n.submit-btn[data-v-000d0eb8] {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  border: 0;\n  outline: none;\n  width: 100%;\n  height: 4.025rem;\n  font-size: 1.3rem;\n  background: #ff5a54;\n  color: #fff;\n}\n.submit-btn[data-v-000d0eb8]:disabled {\n  background: #bbb;\n}\n", ""]);
+	exports.push([module.id, "\n@charset \"UTF-8\";\n.main[data-v-000d0eb8] {\n  background: #f4f4f4;\n}\n\n/*头部导航*/\n.header[data-v-000d0eb8] {\n  background: #222431;\n  color: #fff;\n  height: 3.15rem;\n  line-height: 3.15rem;\n  text-align: center;\n  position: relative;\n  font-size: 1.3rem;\n}\n.header .icon-back[data-v-000d0eb8] {\n  position: absolute;\n  left: 1.025rem;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n  width: 1.075rem;\n  height: 2rem;\n  background: url(" + __webpack_require__(112) + ") no-repeat;\n  background-size: contain;\n}\n.header .icon-help[data-v-000d0eb8] {\n  position: absolute;\n  right: 0.825rem;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n  width: 1.525rem;\n  height: 1.525rem;\n  background: url(" + __webpack_require__(113) + ") no-repeat;\n  background-size: contain;\n}\n\n/*主要内容*/\n/*头部信息*/\n.buy-day-top[data-v-000d0eb8] {\n  position: relative;\n  background: #fff;\n  padding: 0 1.075rem;\n  color: #666;\n}\n.buy-day-top[data-v-000d0eb8]:after {\n  content: '';\n  position: absolute;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  height: 1px;\n  background: #dddada;\n  -webkit-transform: scaleY(0.5);\n}\n.buy-day-top .top-tit[data-v-000d0eb8] {\n  line-height: 2.05rem;\n  color: #999;\n  font-size: 1rem;\n}\n.buy-day-top .top-infor[data-v-000d0eb8] {\n  position: relative;\n}\n.buy-day-top .top-infor[data-v-000d0eb8]:after {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  height: 0.05rem;\n  width: 2px;\n  height: 1.225rem;\n  background: #dddada;\n  -webkit-transform: translate(-50%, -50%);\n}\n.buy-day-top .top-infor li[data-v-000d0eb8] {\n  float: left;\n  height: 3.7rem;\n  width: 50%;\n  position: relative;\n  box-sizing: border-box;\n  font-size: 1.2rem;\n  padding: 1.25rem 0;\n  line-height: 1;\n}\n.buy-day-top .top-infor .text-right[data-v-000d0eb8] {\n  padding-left: 1.75rem;\n}\n.buy-day-top .top-infor .text-left[data-v-000d0eb8] {\n  padding-right: 1.75rem;\n}\n.buy-day-top .top-infor li em[data-v-000d0eb8] {\n  position: absolute;\n  right: 0;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n}\n\n/*主要内容*/\n.section[data-v-000d0eb8] {\n  padding-bottom: 4.775rem;\n}\n.buy-day-content .cont-tit[data-v-000d0eb8] {\n  line-height: 2.5rem;\n  padding-left: 1.075rem;\n  color: #999;\n}\n.buy-day-content dt[data-v-000d0eb8] {\n  background: #fff;\n  line-height: 1;\n  height: 7.025rem;\n  padding-left: 4.225rem;\n  position: relative;\n  margin-bottom: 0.75rem;\n}\n.buy-day-content > dl dt[data-v-000d0eb8]:last-child {\n  margin-bottom: 0;\n}\n\n/*checkbox*/\n.buy-day-content dt .checkbox[data-v-000d0eb8] {\n  position: absolute;\n  left: 1.075rem;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n  width: 2rem;\n  height: 2rem;\n  background: url(" + __webpack_require__(114) + ") no-repeat;\n  background-size: contain;\n}\n.buy-day-content dt .checked[data-v-000d0eb8] {\n  background: url(" + __webpack_require__(115) + ") no-repeat;\n  background-size: contain;\n}\n.buy-day-content dt .disabled[data-v-000d0eb8] {\n  background: url(" + __webpack_require__(116) + ") no-repeat;\n  background-size: contain;\n}\n\n/*顶部*/\n.buy-day-content dt .infor-code[data-v-000d0eb8] {\n  font-size: 1.4rem;\n  position: relative;\n  padding: 1.625rem 0 1.475rem 0;\n}\n.infor-code .code-name[data-v-000d0eb8] {\n  color: #333;\n}\n.infor-code .code-code[data-v-000d0eb8] {\n  font-size: 1.1rem;\n  color: #666;\n  padding-left: 0.625rem;\n}\n.infor-code .code-text[data-v-000d0eb8] {\n  color: #666;\n  font-size: 1.4rem;\n  position: absolute;\n  right: 1.075rem;\n  top: 50%;\n  -webkit-transform: translate(0, -50%);\n}\n.infor-code .code-num[data-v-000d0eb8] {\n  color: #333;\n  font-size: 1.5rem;\n}\n\n/*其他*/\n.infor-other[data-v-000d0eb8] {\n  font-size: 1rem;\n  color: #666;\n  position: relative;\n}\n.infor-other .other-text[data-v-000d0eb8] {\n  position: absolute;\n  right: 1.075rem;\n  top: 0;\n}\n\n/*按钮*/\n.submit-btn[data-v-000d0eb8] {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  border: 0;\n  outline: none;\n  width: 100%;\n  height: 4.025rem;\n  font-size: 1.3rem;\n  background: #ff5a54;\n  color: #fff;\n}\n.submit-btn[data-v-000d0eb8]:disabled {\n  background: #bbb;\n}\n", ""]);
 
 	// exports
 
@@ -3643,8 +3643,6 @@ webpackJsonp([5,6],Array(72).concat([
 
 	'use strict';
 
-	//
-	//
 	//
 	//
 	//
@@ -3721,10 +3719,10 @@ webpackJsonp([5,6],Array(72).concat([
 			// 点击事件
 			checkboxTap: function checkboxTap(param) {
 				var item = param.item;
-				param.event.target.checked = !param.event.target.checked;
-				item.isChecked = !item.isChecked;
-
-				this.btnShowFun();
+				if (!item.isSelect) {
+					item.isChecked = !item.isChecked;
+					this.btnShowFun();
+				}
 			},
 			btnShowFun: function btnShowFun() {
 				var hasSlected = this.hasSelectDataFun();
@@ -3989,7 +3987,7 @@ webpackJsonp([5,6],Array(72).concat([
 	  }, [_c('div', {
 	    staticClass: "buy-day-content"
 	  }, [_c('dl', _vm._l((_vm.resData.buyListData), function(item, index) {
-	    return _c('dt', [_c('label', {
+	    return _c('dt', [_c('i', {
 	      directives: [{
 	        name: "tap",
 	        rawName: "v-tap",
@@ -3998,14 +3996,13 @@ webpackJsonp([5,6],Array(72).concat([
 	          item: item
 	        }),
 	        expression: "{methods:checkboxTap,item:item}"
+	      }],
+	      class: ['checkbox', {
+	        'checked': item.isChecked
+	      }, {
+	        'disabled': item.isSelect
 	      }]
-	    }, [_c('input', {
-	      staticClass: "checkbox",
-	      attrs: {
-	        "type": "checkbox",
-	        "disabled": item.isSelect
-	      }
-	    })]), _vm._v(" "), _c('div', {
+	    }), _vm._v(" "), _c('div', {
 	      staticClass: "infor-code"
 	    }, [_c('span', {
 	      staticClass: "code-name"

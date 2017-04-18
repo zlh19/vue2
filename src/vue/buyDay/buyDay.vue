@@ -11,9 +11,7 @@
 		        <div class="buy-day-content">
 		            <dl>
 		                <dt v-for="(item,index) in resData.buyListData">
-		                	<label v-tap="{methods:checkboxTap,item:item}">
-			                    <input type="checkbox" class="checkbox" :disabled="item.isSelect">
-			                </label>
+			                <i :class="['checkbox',{'checked':item.isChecked},{'disabled':item.isSelect}]" v-tap="{methods:checkboxTap,item:item}"></i>
 		                    <div class="infor-code">
 		                        <span class="code-name">{{item.name}}</span><em class="code-code">{{item.code}}</em>
 		                        <span class="code-text"><em class="code-num">{{item.number}}</em></span>
@@ -80,10 +78,10 @@
 			// 点击事件
 			checkboxTap:function(param){
 				var item=param.item;
-				param.event.target.checked=!param.event.target.checked
-				item.isChecked=!item.isChecked;
-
-				this.btnShowFun()
+				if(!item.isSelect){
+					item.isChecked=!item.isChecked;
+					this.btnShowFun()
+				}	
 			},
 			btnShowFun:function(){
 				var hasSlected=this.hasSelectDataFun()

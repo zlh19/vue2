@@ -13057,7 +13057,7 @@ webpackJsonp([0,6],{
 
 
 	// module
-	exports.push([module.id, "\n.fade-enter-active[data-v-29ccd553], .fade-leave-active[data-v-29ccd553] {\n  -webkit-transition: all .3s ease;\n  -webkit-transform: translateX(0px);\n}\n.fade-enter[data-v-29ccd553], .fade-leave-active[data-v-29ccd553] {\n  -webkit-transform: translateX(-100%);\n  opacity: 0;\n}\n.router[data-v-29ccd553] {\n  width: 100%;\n  /*transform: translateX(-300px);*/\n  /*position: absolute;*/\n  /*transition: all .9s cubiz-bezier(.55, 0, .1, 1);*/\n}\n.r[data-v-29ccd553] {\n  width: 100%;\n  position: absolute;\n  min-height: 100%;\n  z-index: 2048;\n}\n", ""]);
+	exports.push([module.id, "\n.fade-enter-active[data-v-29ccd553],\n.fade-leave-active[data-v-29ccd553] {\n  -webkit-transition: all .35s ease;\n  -webkit-transform: translateX(0px);\n}\n.fade-enter[data-v-29ccd553],\n.fade-leave-active[data-v-29ccd553] {\n  -webkit-transform: translateX(-100%);\n  /*opacity: 0;*/\n}\n.router[data-v-29ccd553] {\n  width: 100%;\n  /*transform: translateX(-300px);*/\n  /*position: absolute;*/\n  /*transition: all .9s cubiz-bezier(.55, 0, .1, 1);*/\n}\n.r[data-v-29ccd553] {\n  width: 100%;\n  position: absolute;\n  min-height: 100%;\n  z-index: 2048;\n}\n", ""]);
 
 	// exports
 
